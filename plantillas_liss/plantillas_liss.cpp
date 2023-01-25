@@ -2,6 +2,9 @@
 //
 
 #include <iostream>
+#include "Pair.h"
+#include "MiVector2.h"
+
 template <typename T>
 
 T promedio( T valores[], int num)
@@ -67,6 +70,37 @@ int main()
     {
         std::cout << "mayor que";
     }
+
+    //seccion prueba de clase pair 
+     Pair<int>* parA = new Pair<int>();
+     parA->name = "Player1";
+     parA->value = 53;
+
+     Pair<double>* parB = new Pair<double>();
+     parB->name = "Player2";
+     parB-> value = 234.67636357;
+    
+     Pair<std::string>* parDeStrings = new Pair<std::string>();
+     parDeStrings->name = "hola";
+     parDeStrings->value = "mundo";
+
+     parA->print();
+     parB->print();
+     parDeStrings->print();
+
+     //ejemplo de vectores
+
+     MiVector2<float>* v1 = new MiVector2<float>();
+     v1->x = 78.2345;
+     v1->y = 43.213;
+
+     std::cout << "velocidad: (" << v1->x << "," << v1->y << "), rapidez=" << v1->sqrMagnitude() << std::endl;
+
+     MiVector2<float>* v2 = new MiVector2<float>(4, 3);
+     std::cout << "velocidad: (" << v2->x << "," << v2->y << "), rapidez=" << v2->sqrMagnitude() << std::endl;
+
+           
+
 
 
 

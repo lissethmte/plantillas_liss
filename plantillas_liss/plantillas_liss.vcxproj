@@ -139,7 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="MiVector2.cpp" />
+    <ClCompile Include="Pair.cpp" />
     <ClCompile Include="plantillas_liss.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MiVector2.h" />
+    <ClInclude Include="Pair.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
